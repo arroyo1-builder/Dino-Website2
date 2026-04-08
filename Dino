@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dinosaur</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      background: #1a1a2e;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      font-family: 'Georgia', serif;
+    }
+    h1 {
+      color: #e8d44d;
+      font-size: 5rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      margin-top: 2rem;
+      text-shadow: 3px 3px 0 #7a6b1a;
+    }
+    svg {
+      filter: drop-shadow(0 8px 24px rgba(0,0,0,0.6));
+    }
+  </style>
+</head>
+<body>
+
+  <!-- T-Rex SVG -->
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 350" width="400" height="350">
+    <!-- Body -->
+    <ellipse cx="200" cy="200" rx="90" ry="65" fill="#4a7c59"/>
+    <!-- Tail -->
+    <polygon points="110,210 30,260 50,220 110,190" fill="#4a7c59"/>
+    <polygon points="30,260 10,290 50,255" fill="#3a6348"/>
+    <!-- Neck -->
+    <rect x="230" y="120" width="50" height="80" rx="20" fill="#4a7c59"/>
+    <!-- Head -->
+    <ellipse cx="285" cy="105" rx="55" ry="38" fill="#4a7c59"/>
+    <!-- Snout -->
+    <polygon points="310,90 360,100 310,125" fill="#4a7c59"/>
+    <!-- Jaw (lower) -->
+    <polygon points="310,115 358,108 310,130" fill="#3a6348"/>
+    <!-- Eye -->
+    <circle cx="300" cy="90" r="10" fill="#1a1a1a"/>
+    <circle cx="303" cy="87" r="3" fill="white"/>
+    <!-- Nostril -->
+    <ellipse cx="345" cy="99" rx="4" ry="3" fill="#3a6348"/>
+    <!-- Teeth -->
+    <polygon points="320,115 328,125 336,115" fill="white"/>
+    <polygon points="335,113 343,123 351,113" fill="white"/>
+    <!-- Tiny arms -->
+    <line x1="255" y1="175" x2="235" y2="205" stroke="#3a6348" stroke-width="10" stroke-linecap="round"/>
+    <line x1="235" y1="205" x2="228" y2="215" stroke="#3a6348" stroke-width="7" stroke-linecap="round"/>
+    <line x1="235" y1="205" x2="240" y2="218" stroke="#3a6348" stroke-width="7" stroke-linecap="round"/>
+    <!-- Left leg -->
+    <rect x="155" y="250" width="35" height="60" rx="12" fill="#3a6348"/>
+    <rect x="145" y="305" width="50" height="18" rx="8" fill="#2d5239"/>
+    <!-- Right leg -->
+    <rect x="210" y="250" width="35" height="60" rx="12" fill="#3a6348"/>
+    <rect x="200" y="305" width="50" height="18" rx="8" fill="#2d5239"/>
+    <!-- Back spikes -->
+    <polygon points="200,140 210,115 220,140" fill="#3a6348"/>
+    <polygon points="220,138 233,112 243,138" fill="#3a6348"/>
+    <polygon points="240,140 252,116 260,140" fill="#3a6348"/>
+    <!-- Ground shadow -->
+    <ellipse cx="195" cy="325" rx="110" ry="12" fill="rgba(0,0,0,0.3)"/>
+  </svg>
+
+  <h1>Dinosaur</h1>
+
+</body>
+</html>
